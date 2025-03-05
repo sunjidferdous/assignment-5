@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[rgb(244,247,255)] px-35 py-5">
+    <section class="bg-white p-5 rounded-3xl">
+        <div class="flex justify-between items-center">
+            <div class="flex gap-5">
+                <img class="w-10" src="assets/logo.png" alt="">
+                <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            
+            <div class="flex gap-10 ">
+                <div class="flex items-center border-none bg-[rgb(244,247,255)] px-4 py-2 rounded-full gap-4">
+                    <img src="assets/checkbox.png" alt="">
+                    <h1 id="completedCount" class="text-3xl font-bold">23</h1>
+                </div>
+                <div class="border-none bg-[rgb(244,247,255)] p-3 rounded-full">
+                    <img id="colorButton" class="w-10" src="assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="flex gap-5">
+        <section class="max-w-286 h-230 ml-0 mt-5 rounded-3xl bg-white">
+            <div class="border-b-2 border-dashed border-gray-200 p-4">
+                <div class="flex justify-around pt-2">
+                    <div class="flex justify-around items-center bg-[rgb(244,247,255)] p-5 rounded-3xl w-67 h-32" >
+                        <div><img src="assets/checkbox.png" alt=""></div>
+                        <div>
+                            <h3 class="text-gray-500">Task Assigned</h3>
+                            <h1 id="todoCount" class="text-3xl font-bold">06</h1>
+                        </div>
+                    </div>
+                    <div id="BlogsPage" class="flex justify-start items-center bg-blue-500 text-white p-5 rounded-3xl w-132 h-32 gap-4" >
+                        <div><img src="assets/board.png" alt=""></div>
+                        <div>
+                            <h1 class="text-white text-3xl">Discover Something <br>New Today!</h1>
+                        </div>
+                    </div>
+                    <div class="flex justify-around items-center bg-[rgb(244,247,255)] p-5 rounded-3xl w-67 h-32" >
+                        <div><img src="assets/calender.png" alt=""></div>
+                        <div>
+                            <h1 id="dayDisplay" class="text-2xl">WED</h1>
+                            <h1 id="dateDisplay" class="text-2xl font-bold">Jul 28 2025</h1>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="grid grid-cols-3 gap-auto p-5">
+                <div class="p-5">
+                    <div class=" bg-[rgb(244,247,255)] p-5 rounded-3xl w-85 h-79">
+                        <div class="bg-white rounded-lg px-3 w-25">
+                            <h3>ShopEase</h3>
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="board-task text-2xl">Fix Mobile Button Issue </h1>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 mt-5 h-20 line-clamp-1 ">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="mt-5 pt-5 border-t-2 border-dashed border-gray-400 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-gray-400">Deadline</h3>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="complete-btn btn btn-neutral bg-blue-500 border-none px-3 text-white">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class=" bg-[rgb(244,247,255)] p-5 rounded-3xl w-85 h-79">
+                        <div class="bg-white rounded-lg px-3 w-25">
+                            <h3>CloudSync</h3>
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="board-task text-2xl">Add Dark Mode </h1>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 mt-5 h-20 line-clamp-1 ">
+                            <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                        </div>
+                        <div class="mt-5 pt-5 border-t-2 border-dashed border-gray-400 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-gray-400">Deadline</h3>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="complete-btn btn btn-neutral bg-blue-500 border-none px-3 text-white">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class=" bg-[rgb(244,247,255)] p-5 rounded-3xl w-85 h-79">
+                        <div class="bg-white rounded-lg px-3 w-25">
+                            <h3>SwiftPay</h3>
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="board-task text-2xl">Optimize  Home page  </h1>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 mt-5 h-20 line-clamp-1 ">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="mt-5 pt-5 border-t-2 border-dashed border-gray-400 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-gray-400">Deadline</h3>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="complete-btn btn btn-neutral bg-blue-500 border-none text-white px-3">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class=" bg-[rgb(244,247,255)] p-5 rounded-3xl w-85 h-79">
+                        <div class="bg-white rounded-lg px-3 w-25">
+                            <h3>Meta</h3>
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="board-task text-2xl">Add new emoji 🤲</h1>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 mt-5 h-20 line-clamp-1 ">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="mt-5 pt-5 border-t-2 border-dashed border-gray-400 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-gray-400">Deadline</h3>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="complete-btn btn btn-neutral bg-blue-500 border-none px-3 text-white">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class=" bg-[rgb(244,247,255)] p-5 rounded-3xl w-85 h-79">
+                        <div class="bg-white rounded-lg px-3 w-27">
+                            <h3>Google LLC</h3>
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="board-task text-2xl">Integrate OpenAI API </h1>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 mt-5 h-20 line-clamp-1 ">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="mt-5 pt-5 border-t-2 border-dashed border-gray-400 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-gray-400">Deadline</h3>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="complete-btn btn btn-neutral bg-blue-500 border-none text-white px-3">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 gap-5">
+                    <div class=" bg-[rgb(244,247,255)] p-5 rounded-3xl w-85 h-79">
+                        <div class="bg-white rounded-lg px-3 w-25">
+                            <h3>Glassdoar</h3>
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="board-task text-2xl">Improve Job searching </h1>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 mt-5 h-20 line-clamp-1 ">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="mt-5 pt-5 border-t-2 border-dashed border-gray-400 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-gray-400">Deadline</h3>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <div>
+                                <button class="complete-btn btn btn-neutral bg-blue-500 border-none text-white px-3">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </section>
+    <!-- activity log -->
+        <section class="w-115 h-230  mt-5  bg-white rounded-3xl">
+            <div class="border-b-2 border-dashed border-gray-200 p-4">
+                <div>
+                    <div class="flex gap-4 justify-center">
+                        <img class="w-" src="assets/activity.png" alt="">
+                        <h1 class="text-3xl">Activity Log</h1>
+                    </div><br>
+                    <div class="flex justify-center">
+                        <button id="clear-history" class="btn btn-neutral bg-blue-500 border-none text-white px-3 ">Clear History</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 activity-container">
+
+                </div>
+            </div>
+    
+        </section>
+    </main>
+    
+
+
+
+    <script>
+        function updateDate() {
+            let today = new Date();
+            let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+            let optionDate = {year: 'numeric', month: 'long', day: 'numeric' };
+
+            let currentDay = days[today.getDay()];
+            let formattedDate = today.toLocaleDateString('en-US', optionDate);
+
+            document.getElementById('dayDisplay').innerText = currentDay;
+            document.getElementById('dateDisplay').innerText = formattedDate;
+        }
+        updateDate();
+    </script>
+
+    <script src="scripts/randomColor.js"></script>
+    
+    <script src="scripts/toggleBlogs.js"></script>
+
+    <script src="scripts/completed.js"></script>
+</body>
+</html>
